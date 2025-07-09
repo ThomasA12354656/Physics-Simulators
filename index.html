@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Physics Simulators</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c2b);
+      color: #00ffe0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
+      text-shadow: 0 0 15px #00ffe0;
+    }
+
+    .link-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a.sim-link {
+      text-decoration: none;
+      color: #00ffe0;
+      background: rgba(0, 255, 224, 0.1);
+      border: 2px solid #00ffe0;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(0, 255, 224, 0.3);
+    }
+
+    a.sim-link:hover {
+      background: #00ffe0;
+      color: #0f0f0f;
+      box-shadow: 0 0 25px #00ffe0;
+    }
+
+    .glow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(0, 255, 224, 0.15) 0%, transparent 80%);
+      pointer-events: none;
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 0.3;
+      }
+      50% {
+        opacity: 0.6;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  <h1>Physics Simulators</h1>
+  <div class="link-container">
+    <a class="sim-link" href="https://thomasa12354656.github.io/heat/" target="_blank">🔥 Heat Simulator</a>
+    <a class="sim-link" href="https://thomasa12354656.github.io/Forces/" target="_blank">🌀 Forces Simulator</a>
+  </div>
+</body>
+</html>
